@@ -1,0 +1,76 @@
+body {
+  background-color: #eee;
+}
+
+.reviewContainer {
+	width: 600px;
+	height: 170px;
+	overflow: hidden;
+	border-radius: 5px;
+	margin: 50px auto;
+	position: relative;
+	box-shadow: 0 0 10px -2px #ddd;
+	background-color: #fff;
+}
+
+.panel {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-row: 2;
+	background-color: #fff;
+	padding-bottom: 10px;
+	position: absolute;
+}
+
+.panelActive {
+	transform: translateX(0) !important;
+	transition: transform 3s ease;
+}
+
+.panel img {
+	width: 100px;
+	height: 100px;
+	justify-self: center;
+	align-self: center;
+}
+
+.panel:nth-of-type(1) img {
+	background-color: #12aedb;
+}
+
+.panel:nth-of-type(2) img {
+	background-color: #db4646;
+}
+
+.panel:nth-of-type(3) img {
+	background-color: #96c465;
+}
+
+.panel p {
+	grid-column: 2/4;
+	clear: right;
+	text-align: justify;
+}
+
+.panel span {
+	grid-column: 2/4;
+	justify-self: start;
+}
+
+.control {
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+}
+
+.control span {
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 5px;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.controlActive {
+	background-color: #bbb !important;
+}
